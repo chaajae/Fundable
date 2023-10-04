@@ -18,7 +18,7 @@ import com.fun.member.model.service.MemberService;
 import com.fun.member.model.vo.Member;
 
 /**
- * Servlet implementation class changeSellerPageController
+ * Servlet implementation class ChangeSellerPageController
  */
 @WebServlet("/na")
 public class ChangeSellerPageController extends HttpServlet {
@@ -27,7 +27,7 @@ public class ChangeSellerPageController extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public changeSellerPageController() {
+    public ChangeSellerPageController() {
         super();
         // TODO Auto-generated constructor stub
     }
