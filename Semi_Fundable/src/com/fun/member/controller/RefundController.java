@@ -21,7 +21,7 @@ import com.fun.member.model.vo.Member;
 import com.fun.member.model.vo.Pay;
 
 /**
- * Servlet implementation class refundController
+ * Servlet implementation class RefundController
  */
 @WebServlet("/refund.me")
 public class RefundController extends HttpServlet {
@@ -30,7 +30,7 @@ public class RefundController extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public refundController() {
+    public RefundController() {
         super();
         // TODO Auto-generated constructor stub
     }
