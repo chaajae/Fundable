@@ -1,3 +1,11 @@
+
+
+<!-- ================
+   Create by 차재현
+   ================ -->
+
+
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import="java.util.ArrayList, com.fun.member.model.vo.Member, com.fun.member.model.vo.Pay , com.fun.product.model.vo.Image , java.text.DecimalFormat,java.text.NumberFormat,java.util.Locale"%>
     <%
@@ -6,13 +14,10 @@
 	ArrayList<Pay> pTextList = (ArrayList<Pay>) request.getAttribute("pTextList");
 	Member addressM = (Member) session.getAttribute("addressM");
 	String address = addressM.getAddress().replace(",", " ");
-	
-	
 
 	DecimalFormat df = new DecimalFormat("###,###");
 
-	
-	
+
     %>
 <!DOCTYPE html>
 <html>
@@ -416,14 +421,10 @@
 		
 		if(msg != "null"){
 			alert(msg);
-			// 알림창을 띄워준 후 session에 담긴 해당 메세지는 지워줘야한다.
-			// 안그럼, menubar.jsp가 로딩될때마다 항상 메세지가 뜰것..
 			<% session.removeAttribute("alertMsg");%>
 		}
 		
 	</script>
-
-
 
   <%@ include file="/views/common/헤더.jsp" %>
 <!-- 배너 부분 -->
@@ -520,8 +521,7 @@
 <!-- 마이페이지 컨텐츠 -->
 <div id="mypage-content">
 
- 
-  
+
       <h4>배송 조회</h4>
         <br>
     
@@ -567,12 +567,9 @@
             </div>
 
         </div>
-  
 
   <!-- 배송지 컨텐츠부분-->
   <div id="delivery-history">
-
-    
 
     <table>
 
@@ -584,8 +581,6 @@
             <th id="delivery-history-header4">진행상태</th>
         </tr>
         </thead>
-
-
 
         <tbody>
 				
@@ -628,42 +623,19 @@
 				<%} %>
                   </td>
                   
-                </tr>
-				
-				
+                </tr>	
 				
 				<%} %>
 				<%}  else{%>
                 	<td colspan="5">배송내역이 없습니다</td>
                 
                 <%} %>
-                
-                
-                
-                
-                
-                  
+                          
         </tbody>
 
 
     </table>
         
-    
-
-    
-        
-      
-    
-
-
-      
-    
-
-
-
-
-
-
 
   </div>
    <!-- 배송지 컨텐츠부분 끝-->
@@ -673,26 +645,8 @@
 <!-- 마이페이지 컨텐츠 끝 -->
 
 
-
-
-
-
-
 </div>
 <!-- 마이페이지 컨텐츠부분 감싸는 div끝 -->
-
-
-
-
-
-
-
-
-  
-
-
-
-
 
 
 
