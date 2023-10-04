@@ -1,3 +1,11 @@
+
+
+<!-- ================
+   Create by 차재현
+   ================ -->
+
+
+
 <%@ page language="java" contentType="text/html; charset=UTF-8" isELIgnored="true"
     pageEncoding="UTF-8" import="java.util.ArrayList , com.fun.product.model.vo.Image , com.fun.member.model.vo.Member , com.fun.product.model.vo.Product"%>
     <% 
@@ -52,9 +60,7 @@
             width: clac(100vw - (100vw - 100%));
         }
         
-  
 
-      
 
         #mypagebanner{
             
@@ -527,10 +533,7 @@
             </button>
             <!-- 찜하기 버튼 -->
 			
-			
-           
-
-		
+	
             <div class="card-body">
               <h5 class="card-title"><%= wishP.get(i).getSellerNickName() %></h5>
               <p class="card-text"><%= wishP.get(i).getpTitle().substring(0,20) %>...</p>
@@ -543,16 +546,10 @@
 					
        <%} %>
           
-
-
       </div>
 
       
     </div>
-
-
-      
-    
 
   </div>
    <!-- 찜한내역 컨텐츠부분 끝-->
@@ -563,14 +560,8 @@
 
 
 
-
-
-
-
 </div>
 <!-- 마이페이지 컨텐츠부분 감싸는 div끝 -->
-
-
 
 
 
@@ -583,15 +574,6 @@
 var $jh = jQuery.noConflict();
 // ============================= 찜하기 색상변화 스크립트 ===============================
   $jh(function(){
-    // $("#wl-history .btn1").click(function(){
-    //     let col = $(this).children().attr("color");
-        
-    //     if(col == "rgba(255,0,0, .85)"){
-    //         $(this).children().attr("color","rgba(0, 0, 0, .5)");
-    //     }else if(col == "rgba(0, 0, 0, .5)"){
-    //         $(this).children().attr("color","rgba(255,0,0, .85)");
-    //     }
-    // });
 
     $jh(function(){
     $jh("#wl-history .btn1").click(function(){
@@ -618,7 +600,6 @@ var $jh = jQuery.noConflict();
             $jh(this).children().attr("color","rgba(136, 137, 143, 0.4)");
         }
 
-        
     });
 });
  // ============================== 알림신청 색상변화 스크립트 =============================
@@ -641,10 +622,7 @@ Array.from(document.querySelectorAll(".material-ripple")).forEach(a => {
     })
 })
 /*======================================== 클릭시 퍼지는 효과 =======================================*/
- 
- 
- 
- 
+
  function wish(e){
 		
 	$jh.ajax({
