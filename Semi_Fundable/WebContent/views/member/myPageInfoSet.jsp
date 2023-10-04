@@ -1,3 +1,11 @@
+
+
+<!-- ================
+   Create by 차재현
+   ================ -->
+
+
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import="com.fun.product.model.vo.Image"%>
     <%
@@ -64,8 +72,6 @@
 			height:50px;
 		}
          
-  
-        
   
           #mypagebanner{
             
@@ -298,14 +304,10 @@ const msg = "<%= (String) session.getAttribute( "alertMsg") %>";
 
 if(msg != "null"){
 	alert(msg);
-	// 알림창을 띄워준 후 session에 담긴 해당 메세지는 지워줘야한다.
-	// 안그럼, menubar.jsp가 로딩될때마다 항상 메세지가 뜰것..
 	<% session.removeAttribute("alertMsg");%>
 }
 
 </script>
-  
-
 
 <!-- 배너 부분 -->
 <div id="mypagebanner-wrap">
@@ -360,7 +362,6 @@ if(msg != "null"){
   </div>
   </div>
 <!-- 배너 부분  끝 -->
-
 
 
 
@@ -419,11 +420,7 @@ if(msg != "null"){
   	 <input type="file" id="imgChange" name="changeImg" onchange="loadImg(this)" style="display:none;">
   </div>
   
- 
-  
-  
-  
-  
+
   <div align="center">
   <h5 style="font-weight: bold;">관심사 등록</h5></div>
   <br>
@@ -493,9 +490,7 @@ if(msg != "null"){
   <!-- 기본정보설정 컨텐츠부분-->
   <div id="nf-history">
     
-    
-    
-    
+
     
     <div style="width: 30vw;" >
       <h6>닉네임 변경</h6>
@@ -537,16 +532,8 @@ if(msg != "null"){
 </div>
 <!-- 마이페이지 컨텐츠 끝 -->
 
-
-
-
-
-
-
 </div>
 <!-- 마이페이지 컨텐츠부분 감싸는 div끝 -->
-
-
 
 
 <%@ include file="/views/common/프터.jsp" %>
@@ -570,7 +557,7 @@ var $qs = jQuery.noConflict();
         $qs("#hiddenB").click();
       });
 
-    
+ 
     
     $qs("#floatingInput").val("<%= loginUser.getUserNick() %>");
     $qs("#floatingEmail").val("<%= loginUser.getEmail() %>");
@@ -578,18 +565,11 @@ var $qs = jQuery.noConflict();
     const interest = "<%= loginUser.getUserInterest() %>";
 	
 	$qs("input[type=checkbox][name=user-interest]").each(function(){
-		// 순차적으로 접근한 input요소의 value값이 interest에 포함되어 있을 경우
-		// 해당 input 요소에 checked속성 부여
-		
-		// interest문자열로부터 현재 체크박스의 value가 포함되어있지 않다면
-		// -1을 반환
 		if(interest.search($qs(this).val())!= -1)
 		 $qs(this).attr("checked",true);
 		
 	})
-    
-    
-    
+
   });
 
   	
@@ -605,15 +585,12 @@ var $qs = jQuery.noConflict();
       }
 
   	}
- 
-  	
-  	
+
   	function loadImg(inputFile){
 			if(inputFile.files.length == 1){
 			const reader = new FileReader();
 				
-				reader.readAsDataURL(inputFile.files[0]);
-				
+				reader.readAsDataURL(inputFile.files[0]);	
 				reader.onload = function(e){ 
 					$qs("#info-img").attr("src", e.target.result);
 					
@@ -623,7 +600,6 @@ var $qs = jQuery.noConflict();
 
 		}
 
-  	
   	function deleteImg(){
 		 $qs.ajax({
 				
