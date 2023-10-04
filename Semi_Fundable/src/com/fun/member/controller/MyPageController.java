@@ -25,7 +25,7 @@ import com.fun.product.model.vo.Image;
  * Servlet implementation class myPageController
  */
 @WebServlet("/myPage.me")
-public class myPageController extends HttpServlet {
+public class MyPageController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
