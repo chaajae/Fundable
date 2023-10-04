@@ -21,7 +21,7 @@ import com.fun.member.model.vo.Member;
  * Servlet implementation class changeSellerPageController
  */
 @WebServlet("/na")
-public class changeSellerPageController extends HttpServlet {
+public class ChangeSellerPageController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
