@@ -19,16 +19,16 @@ import com.fun.member.model.service.MemberService;
 import com.fun.member.model.vo.Member;
 
 /**
- * Servlet implementation class userAddressController
+ * Servlet implementation class UserAddressController
  */
 @WebServlet("/address.me")
-public class userAddressController extends HttpServlet {
+public class UserAddressController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public userAddressController() {
+    public UserAddressController() {
         super();
         // TODO Auto-generated constructor stub
     }
