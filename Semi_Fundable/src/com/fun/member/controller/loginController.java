@@ -1,3 +1,10 @@
+
+
+// ================
+// Create by 차재현
+// ================
+
+
 package com.fun.member.controller;
 
 import java.io.IOException;
@@ -50,20 +57,14 @@ public class loginController extends HttpServlet {
 		String userPwd = request.getParameter("userPwd");
 		
 		Member loginUser = new MemberService().loginMember(userId,userPwd);
-		
-		//Image profileImg = new MemberService().selectProfileImg(userId);
-		//ArrayList<Image> pList = new MemberService().selectProfileProductImg(userId); 
-		
-		//ArrayList<Pay> pTextList = new MemberService().selectProfileProductText(userId); 
-		
-		
+
 		
 		if(loginUser == null) { // 로그인 실패 => 에러페이지 응답
 			
 			request.getSession().setAttribute("alertMsg","로그인에 실패하였습니다.");
 			response.sendRedirect(request.getContextPath()+"/login.me");
 			
-		}else { // 로그인 성공시 => index페이지(메인페이지) 응답
+		}else { // 로그인 성공시 => 메인페이지 응답
 			
 			Member addressM = new Member(
 					loginUser.getUserNo(),
@@ -82,15 +83,9 @@ public class loginController extends HttpServlet {
 			
 			request.getSession().setAttribute("loginUser", loginUser);
 			request.getSession().setAttribute("addressM", addressM);
-				
-			//request.getSession().setAttribute("profileImg", profileImg);
-			
-			//	request.getSession().setAttribute("pList", pList);
-			
-			//	request.getSession().setAttribute("pTextList", pTextList);
-			
+
 			request.getSession().setAttribute("alertMsg","로그인이 성공적으로 완료되었습니다.");
-			//request.getRequestDispatcher("views/member/myPage.jsp").forward(request, response);
+		
 			response.sendRedirect(request.getContextPath()+"/main.do");
 		}
 		
