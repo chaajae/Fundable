@@ -1,3 +1,10 @@
+
+
+// ================
+// Create by 차재현
+// ================
+
+
 package com.fun.member.controller;
 
 import java.io.IOException;
@@ -34,15 +41,11 @@ public class DeleteMemberController extends HttpServlet {
 		
 		int result = new MemberService().jhDeleteMember(m.getUserNo());
 	
-	
-		
 		if(result > 0) {
 			request.getSession().invalidate();
 			request.getSession().setAttribute("alertMsg","회원탈퇴에 성공했습니다.");
 			response.sendRedirect(request.getContextPath()+"/main.do");
-			
-		}
-		
+		}	
 	}
 
 	/**
