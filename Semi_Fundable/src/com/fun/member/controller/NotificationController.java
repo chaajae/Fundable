@@ -24,7 +24,7 @@ import com.fun.product.model.vo.Image;
  * Servlet implementation class notificationController
  */
 @WebServlet("/notification.me")
-public class notificationController extends HttpServlet {
+public class NotificationController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
