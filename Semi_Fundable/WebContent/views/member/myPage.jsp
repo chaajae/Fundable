@@ -450,8 +450,6 @@
 		
 		if(msg != "null"){
 			alert(msg);
-			// 알림창을 띄워준 후 session에 담긴 해당 메세지는 지워줘야한다.
-			// 안그럼, menubar.jsp가 로딩될때마다 항상 메세지가 뜰것..
 			<% session.removeAttribute("alertMsg");%>
 		}
 		
@@ -508,7 +506,6 @@
         </div>     
 
         <div id="mypagebanner-btn">
-
            <form action="<%= contextPath %>/IngProject" method="get"><input type="submit" name="" id="seller-page-change" class="btn btn-outline-secondary"  value="셀러페이지 전환"></form>
         </div>
 
@@ -600,9 +597,7 @@
 
         
         <tbody>
-          
-        
-         			
+	
          			<% if(pList.size() > 0){ %>
            			<% for(int i = 0 ; i < pList.size(); i++){ %>
                   <tr  <%if(pTextList.get(i).getrStatus().equals("N") || pTextList.get(i).getrStatus().equals("C")){ %> style="background-color:rgb(235, 235, 235); color:gray;" <%} %>>
@@ -653,23 +648,8 @@
 
 
 
-
-
-
 </div>
 <!-- 마이페이지 컨텐츠부분 감싸는 div끝 -->
-
-
-
-
-
-
-
-
-  
-
-
-
 
 
 
