@@ -22,7 +22,7 @@ import com.fun.member.model.vo.Member;
 import com.fun.member.model.vo.Pay;
 
 /**
- * Servlet implementation class myDeliveryController
+ * Servlet implementation class MyDeliveryController
  */
 @WebServlet("/delivery.me")
 public class MyDeliveryController extends HttpServlet {
@@ -31,7 +31,7 @@ public class MyDeliveryController extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public myDeliveryController() {
+    public MyDeliveryController() {
         super();
         // TODO Auto-generated constructor stub
     }
