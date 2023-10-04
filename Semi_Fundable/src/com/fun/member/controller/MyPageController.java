@@ -22,7 +22,7 @@ import com.fun.member.model.vo.Pay;
 import com.fun.product.model.vo.Image;
 
 /**
- * Servlet implementation class myPageController
+ * Servlet implementation class MyPageController
  */
 @WebServlet("/myPage.me")
 public class MyPageController extends HttpServlet {
@@ -31,7 +31,7 @@ public class MyPageController extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public myPageController() {
+    public MyPageController() {
         super();
         // TODO Auto-generated constructor stub
     }
