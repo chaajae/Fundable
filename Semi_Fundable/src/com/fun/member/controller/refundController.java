@@ -1,3 +1,10 @@
+
+
+// ================
+// Create by 차재현
+// ================
+
+
 package com.fun.member.controller;
 
 import java.io.IOException;
@@ -50,42 +57,26 @@ public class refundController extends HttpServlet {
 		Member m  = (Member) request.getSession().getAttribute("loginUser");
 		
 		ArrayList<Pay> pTextList = new MemberService().selectProfileProductText(m.getUserId()); 
-	
-		
 		
 		if(hiddenRequest.equals("refund")) {
 		if(result > 0 ) {
-			
-			//request.removeAttribute("pTextList");
-			//request.setAttribute("pTextList", pTextList);
-			// request.getRequestDispatcher("views/member/myPage.jsp").forward(request, response);
-			response.sendRedirect(request.getContextPath()+"/myPage.me");
-			
+			response.sendRedirect(request.getContextPath()+"/myPage.me");	
 		}else {
 			request.setAttribute("alertMsg", "예약취소에 실패하였습니다.");
 			request.getRequestDispatcher("views/member/myPage.jsp").forward(request, response);
 		}
 		}
 		
-		
-		
+
 		if(hiddenRequest.equals("request")) {
 			if(result > 0 ) {
-				
-				//request.removeAttribute("pTextList");
-				//request.setAttribute("pTextList", pTextList);
-				// request.getRequestDispatcher("views/member/myPage.jsp").forward(request, response);
-				response.sendRedirect(request.getContextPath()+"/delivery.me");
-				//request.getRequestDispatcher("views/member/myPageDelivery.jsp").forward(request, response);
-				
+				response.sendRedirect(request.getContextPath()+"/delivery.me");	
 			}else {
 				request.setAttribute("alertMsg", "환불신청에 실패하였습니다.");
 				request.getRequestDispatcher("views/member/myPageDelivery.jsp").forward(request, response);
 			}
 			
 			}
-	
-		
 	
 	}
 
