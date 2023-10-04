@@ -1,3 +1,11 @@
+
+
+<!-- ================
+   Create by 차재현
+   ================ -->
+
+
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import="com.fun.product.model.vo.Image"%>
     <%
@@ -358,8 +366,6 @@
 		
 		if(msg != "null"){
 			alert(msg);
-			// 알림창을 띄워준 후 session에 담긴 해당 메세지는 지워줘야한다.
-			// 안그럼, menubar.jsp가 로딩될때마다 항상 메세지가 뜰것..
 			<% session.removeAttribute("alertMsg");%>
 		}
 		
@@ -419,8 +425,6 @@
 <!-- 배너 부분  끝 -->
 
 
-
-
 <!-- 마이페이지 컨텐츠부분 감싸는 div-->
 <div id="mypage-content-wrap">
 
@@ -452,9 +456,7 @@
     <h4 style="font-weight: bold; margin-top: 10vh;">비밀번호 확인</h4>
     <div id="nf-history" >
         <br>
-    
-      
-    
+
       <form style="display: flex; justify-content: center;" action="check.me" method="post">
         
         <div style="width: 30vw;" >
@@ -464,9 +466,7 @@
           <label for="floatingInput">비밀번호</label>
         </div>
         <br>
-        
-    
-        
+     
         <button class="w-100 btn btn-lg btn-secondary"  type="submit">확인</button>
       </div>
 
@@ -481,13 +481,8 @@
 
 
 
-
-
-
-
 </div>
 <!-- 마이페이지 컨텐츠부분 감싸는 div끝 -->
-
 
 
 
