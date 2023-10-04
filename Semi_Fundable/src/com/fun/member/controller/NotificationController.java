@@ -21,7 +21,7 @@ import com.fun.member.model.vo.Pay;
 import com.fun.product.model.vo.Image;
 
 /**
- * Servlet implementation class notificationController
+ * Servlet implementation class NotificationController
  */
 @WebServlet("/notification.me")
 public class NotificationController extends HttpServlet {
@@ -30,7 +30,7 @@ public class NotificationController extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public notificationController() {
+    public NotificationController() {
         super();
         // TODO Auto-generated constructor stub
     }
