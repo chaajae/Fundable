@@ -20,7 +20,7 @@ import com.fun.member.model.vo.Pay;
 import com.fun.product.model.vo.Image;
 
 /**
- * Servlet implementation class myPageDateSearchController
+ * Servlet implementation class MyPageDateSearchController
  */
 @WebServlet("/dateSearch.me")
 public class MyPageDateSearchController extends HttpServlet {
@@ -29,7 +29,7 @@ public class MyPageDateSearchController extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public myPageDateSearchController() {
+    public MyPageDateSearchController() {
         super();
         // TODO Auto-generated constructor stub
     }
