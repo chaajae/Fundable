@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.fun.member.model.service.MemberService;
 
 /**
- * Servlet implementation class deleteImgController
+ * Servlet implementation class DeleteImgController
  */
 @WebServlet("/deleteImg.me")
 public class DeleteImgController extends HttpServlet {
@@ -27,7 +27,7 @@ public class DeleteImgController extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public deleteImgController() {
+    public DeleteImgController() {
         super();
         // TODO Auto-generated constructor stub
     }
