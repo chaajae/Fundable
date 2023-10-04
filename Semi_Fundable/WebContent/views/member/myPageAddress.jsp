@@ -614,12 +614,6 @@ var $ss = jQuery.noConflict();
               document.getElementById('sample4_postcode').value = data.zonecode;
               document.getElementById("sample4_roadAddress").value = roadAddr;
               document.getElementById("sample4_jibunAddress").value = data.jibunAddress;
-              
-              // if(roadAddr !== ''){
-              //     document.getElementById("sample4_extraAddress").value = extraRoadAddr;
-              // } else {
-              //     document.getElementById("sample4_extraAddress").value = '';
-              // }
 
               var guideTextBox = document.getElementById("guide");
               
