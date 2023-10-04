@@ -23,7 +23,7 @@ import com.fun.product.model.vo.Image;
 import com.fun.product.model.vo.Product;
 
 /**
- * Servlet implementation class loginController
+ * Servlet implementation class LoginController
  */
 @WebServlet(urlPatterns = "/login.me"/*, name="loginServlet"*/)
 public class LoginController extends HttpServlet {
@@ -32,7 +32,7 @@ public class LoginController extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public loginController() {
+    public LoginController() {
         super();
         // TODO Auto-generated constructor stub
     }
