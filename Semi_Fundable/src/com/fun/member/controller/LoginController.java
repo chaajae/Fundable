@@ -26,7 +26,7 @@ import com.fun.product.model.vo.Product;
  * Servlet implementation class loginController
  */
 @WebServlet(urlPatterns = "/login.me"/*, name="loginServlet"*/)
-public class loginController extends HttpServlet {
+public class LoginController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
