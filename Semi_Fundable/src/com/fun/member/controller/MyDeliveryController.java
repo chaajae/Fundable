@@ -25,7 +25,7 @@ import com.fun.member.model.vo.Pay;
  * Servlet implementation class myDeliveryController
  */
 @WebServlet("/delivery.me")
-public class myDeliveryController extends HttpServlet {
+public class MyDeliveryController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
