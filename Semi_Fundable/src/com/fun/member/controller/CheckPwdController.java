@@ -23,7 +23,7 @@ import com.fun.member.model.vo.Member;
  * Servlet implementation class checkPwdController
  */
 @WebServlet("/check.me")
-public class checkPwdController extends HttpServlet {
+public class CheckPwdController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
