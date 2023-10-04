@@ -21,7 +21,7 @@ import com.fun.member.model.service.MemberService;
  * Servlet implementation class deleteImgController
  */
 @WebServlet("/deleteImg.me")
-public class deleteImgController extends HttpServlet {
+public class DeleteImgController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
