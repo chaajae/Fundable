@@ -25,7 +25,7 @@ import com.oreilly.servlet.MultipartRequest;
  * Servlet implementation class infoUpdateController
  */
 @WebServlet("/infoUpdate.me")
-public class infoUpdateController extends HttpServlet {
+public class InfoUpdateController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
