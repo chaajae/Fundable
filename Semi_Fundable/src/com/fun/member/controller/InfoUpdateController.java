@@ -22,7 +22,7 @@ import com.fun.product.model.vo.Image;
 import com.oreilly.servlet.MultipartRequest;
 
 /**
- * Servlet implementation class infoUpdateController
+ * Servlet implementation class InfoUpdateController
  */
 @WebServlet("/infoUpdate.me")
 public class InfoUpdateController extends HttpServlet {
@@ -31,7 +31,7 @@ public class InfoUpdateController extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public infoUpdateController() {
+    public InfoUpdateController() {
         super();
         // TODO Auto-generated constructor stub
     }
