@@ -16,16 +16,16 @@ import com.fun.product.model.vo.Image;
 import com.fun.product.model.vo.Product;
 
 /**
- * Servlet implementation class wishListController
+ * Servlet implementation class WishListController
  */
 @WebServlet("/wish.me")
-public class wishListController extends HttpServlet {
+public class WishListController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public wishListController() {
+    public WishListController() {
         super();
         // TODO Auto-generated constructor stub
     }
