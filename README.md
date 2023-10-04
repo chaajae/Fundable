@@ -7,9 +7,3 @@
 <img src="https://github.com/chaajae/Fundable/assets/137244332/42a77ff7-b6ae-4b2d-b52c-21200cc65615">
 <img src="https://github.com/chaajae/Fundable/assets/137244332/ab7e8d01-6ed7-4c32-b6d7-59732d2ac769">
 <img src="https://github.com/chaajae/Fundable/assets/137244332/2a260482-d4a5-4c22-aa0f-f2de268bc1e4">
-<img src="https://github.com/chaajae/Fundable/assets/137244332/9a71568f-f60b-4b05-b626-f82f8d15a8b6">
-<img src="https://github.com/chaajae/Fundable/assets/137244332/48da07a3-ca91-460c-97d8-6c166705eb01">
-<img src="https://github.com/chaajae/Fundable/assets/137244332/fd52b04a-986f-446a-95ee-9ca3150da1e1">
-<img src="https://github.com/chaajae/Fundable/assets/137244332/9cfc0e1d-b895-4951-8147-09e583e781ad">
-<img src="https://github.com/chaajae/Fundable/assets/137244332/cd2771d2-b68e-4764-b7bb-46f7e2bc6c2f">
-<img src="https://github.com/chaajae/Fundable/assets/137244332/440c468b-f010-4f25-8586-43b94ca49bda">
