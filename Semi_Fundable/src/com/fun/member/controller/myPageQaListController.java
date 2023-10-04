@@ -1,3 +1,10 @@
+
+
+// ================
+// Create by 차재현
+// ================
+
+
 package com.fun.member.controller;
 
 import java.io.IOException;
@@ -36,10 +43,7 @@ public class myPageQaListController extends HttpServlet {
 		Member m = (Member) request.getSession().getAttribute("loginUser");
 		
 		ArrayList<Qa> qaList = new MemberService().selectQaList(m.getUserNo());
-		
-		
-		
-		
+
 		request.getSession().setAttribute("qaList", qaList);
 		
 		request.getRequestDispatcher("views/member/myPageQaList.jsp").forward(request, response);
