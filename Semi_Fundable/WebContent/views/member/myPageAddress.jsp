@@ -1,3 +1,10 @@
+
+
+<!-- ================
+   Create by 차재현
+   ================ -->
+
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import="com.fun.product.model.vo.Image"%>
     <% 
@@ -369,8 +376,6 @@
 		
 		if(msg != "null"){
 			alert(msg);
-			// 알림창을 띄워준 후 session에 담긴 해당 메세지는 지워줘야한다.
-			// 안그럼, menubar.jsp가 로딩될때마다 항상 메세지가 뜰것..
 			<% session.removeAttribute("alertMsg");%>
 		}
 		
@@ -541,19 +546,10 @@
 
       </div>
       
-      
-      
-      <button class="w-100 btn btn-lg btn-secondary" type="submit">수정</button>
-      
-      
+  
+      <button class="w-100 btn btn-lg btn-secondary" type="submit">수정</button>      
 
     </div>
-
-
-
-
-
-
 
       </form>
 
@@ -564,34 +560,8 @@
 </div>
 <!-- 마이페이지 컨텐츠 끝 -->
 
-
-
-
-
-
-
 </div>
 <!-- 마이페이지 컨텐츠부분 감싸는 div끝 -->
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
 
 
 <%@ include file="/views/common/프터.jsp" %>
@@ -615,20 +585,12 @@ var $ss = jQuery.noConflict();
   $ss("#sample4_detailAddress").val(arr[3]);
   
 
-  
-  
-  
   });
 
 </script>
 
 
 <script>
-
-
-
-
-
 
   function sample4_execDaumPostcode() {
       new daum.Postcode({
