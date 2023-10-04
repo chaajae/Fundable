@@ -1,5 +1,7 @@
 # Fundable
 <img src="https://github.com/chaajae/Fundable/assets/137244332/f4323f9e-a36d-4c59-9e71-5b8e77e01fcf">
+<img src="https://github.com/chaajae/Fundable/assets/137244332/028cec1a-61a2-4eff-a364-a99a80b9df95">
+<img src="https://github.com/chaajae/Fundable/assets/137244332/974dcdd8-89a0-441c-8212-88a1fb0a1277">
 <img src="https://github.com/chaajae/Fundable/assets/137244332/bcd7502c-ce41-4af3-8c33-f15eaadfda4e">
 <img src="https://github.com/chaajae/Fundable/assets/137244332/d60e0de5-ffa3-462c-b84c-048f1cfd52b6">
 <img src="https://github.com/chaajae/Fundable/assets/137244332/06bb6278-ce46-46b0-a156-d0dd66b06b06">
