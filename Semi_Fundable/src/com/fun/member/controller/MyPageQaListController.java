@@ -24,7 +24,7 @@ import com.fun.member.model.vo.Member;
  * Servlet implementation class myPageQaListController
  */
 @WebServlet("/qa.me")
-public class myPageQaListController extends HttpServlet {
+public class MyPageQaListController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
