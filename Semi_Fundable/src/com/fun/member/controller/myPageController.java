@@ -1,3 +1,10 @@
+
+
+// ================
+// Create by 차재현
+// ================
+
+
 package com.fun.member.controller;
 
 import java.io.IOException;
@@ -33,21 +40,17 @@ public class myPageController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		
+
 		Member m  = (Member) request.getSession().getAttribute("loginUser");
-		
-		
+
 		Image profileImg = new MemberService().selectProfileImg(m.getUserId());
 		
 		ArrayList<Image> pList = new MemberService().selectProfileProductImg(m.getUserId()); 
 		
 		ArrayList<Pay> pTextList = new MemberService().selectProfileProductText(m.getUserId()); 
-		
-		
+
 				Image imgNone = new Image();
-			
-			
+
 				if(profileImg != null) {
 					request.getSession().setAttribute("profileImg", profileImg);
 					
@@ -58,8 +61,7 @@ public class myPageController extends HttpServlet {
 				request.getSession().setAttribute("pList", pList);
 			
 				request.getSession().setAttribute("pTextList", pTextList);
-			
-			//request.getSession().setAttribute("alertMsg","로그인이 성공적으로 완료되었습니다.");
+
 			request.getRequestDispatcher("views/member/myPage.jsp").forward(request, response);
 	}
 
@@ -67,29 +69,15 @@ public class myPageController extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		
-		
+
 		Member m  = (Member) request.getSession().getAttribute("loginUser");
-		
-		
+
 		Image profileImg = new MemberService().selectProfileImg(m.getUserId());
 		
 		ArrayList<Image> pList = new MemberService().selectProfileProductImg(m.getUserId()); 
 		
 		ArrayList<Pay> pTextList = new MemberService().selectProfileProductText(m.getUserId()); 
-		
-		System.out.println(pList);
-		System.out.println(pTextList);
 	
-//		for(Image i : pList) {
-//			System.out.println(i);
-//		}
-//		for(Pay p : pTextList) {
-//			System.out.println(p);
-//		}
-//		
-			
 		Image imgNone = new Image();
 		
 		if(profileImg != null) {
@@ -98,17 +86,12 @@ public class myPageController extends HttpServlet {
 		}else {
 			request.getSession().setAttribute("profileImg", imgNone);
 		}
-			
-		
+
 				request.getSession().setAttribute("pList", pList);
-			
 				request.getSession().setAttribute("pTextList", pTextList);
-			
-			//request.getSession().setAttribute("alertMsg","로그인이 성공적으로 완료되었습니다.");
+
 			request.getRequestDispatcher("views/member/myPage.jsp").forward(request, response);
-			//response.sendRedirect(request.getContextPath()+"/index.jsp");
-		
-		
+
 	}
 
 }
