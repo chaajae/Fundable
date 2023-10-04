@@ -20,7 +20,7 @@ import com.fun.member.model.service.MemberService;
 import com.fun.member.model.vo.Member;
 
 /**
- * Servlet implementation class checkPwdController
+ * Servlet implementation class CheckPwdController
  */
 @WebServlet("/check.me")
 public class CheckPwdController extends HttpServlet {
@@ -29,7 +29,7 @@ public class CheckPwdController extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public checkPwdController() {
+    public CheckPwdController() {
         super();
         // TODO Auto-generated constructor stub
     }
