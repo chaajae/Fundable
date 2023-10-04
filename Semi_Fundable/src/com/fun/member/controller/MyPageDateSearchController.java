@@ -23,7 +23,7 @@ import com.fun.product.model.vo.Image;
  * Servlet implementation class myPageDateSearchController
  */
 @WebServlet("/dateSearch.me")
-public class myPageDateSearchController extends HttpServlet {
+public class MyPageDateSearchController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
