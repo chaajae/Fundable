@@ -1,3 +1,11 @@
+
+
+// ================
+// Create by 차재현
+// ================
+
+
+
 package com.fun.member.model.dao;
 
 import static com.fun.common.JDBCTemplate.close;
@@ -1041,8 +1049,6 @@ public Image selectProfileImg(Connection conn, String userId) {
 	
 	
 	public int refundProduct(Connection conn, String orderNo,String hiddenSql) {
-		
-//		String hidden = refundRequest.equals("request") ? "refundRequest" :  "refundProduct"; 
 		
 		int result = 0;
 		
