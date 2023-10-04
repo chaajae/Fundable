@@ -24,7 +24,7 @@ import com.fun.member.model.vo.Pay;
  * Servlet implementation class refundController
  */
 @WebServlet("/refund.me")
-public class refundController extends HttpServlet {
+public class RefundController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
