@@ -1,3 +1,11 @@
+
+
+<!-- ================
+   Create by 차재현
+   ================ -->
+
+
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import="com.fun.product.model.vo.Image ,com.fun.member.model.vo.Pay, com.fun.member.model.vo.Member , java.util.ArrayList"%>
     <%
@@ -20,9 +28,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link rel="canonical" href="https://getbootstrap.kr/docs/5.2/examples/headers/">
 
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
 
 
 <style>
@@ -46,9 +52,6 @@
             width: clac(100vw - (100vw - 100%));
         }
         
-       
-
-      
 
         #mypagebanner{
             
@@ -435,8 +438,6 @@
 		
 		if(msg != "null"){
 			alert(msg);
-			// 알림창을 띄워준 후 session에 담긴 해당 메세지는 지워줘야한다.
-			// 안그럼, menubar.jsp가 로딩될때마다 항상 메세지가 뜰것..
 			<% session.removeAttribute("alertMsg");%>
 		}
 		
@@ -585,8 +586,6 @@
 
         
         <tbody>
-          
-        
          			
          			<% if(searchP.size() > 0){ %>
            			<% for(int i = 0 ; i < searchP.size(); i++){ %>
@@ -637,26 +636,8 @@
 
 
 
-
-
-
-
 </div>
 <!-- 마이페이지 컨텐츠부분 감싸는 div끝 -->
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
 
 
 <!--========================================= 상품상세 모달창 ======================================================-->
@@ -718,8 +699,6 @@
 
 <%} %>
 
-
-
 <!--========================================= 상품상세 모달창 끝 ======================================================-->
 <% for(int i = 0; i < searchTextList.size(); i++){ %>
 <!-- Modal -->
@@ -769,7 +748,6 @@
 <%} %>
  
 <%@ include file="/views/common/프터.jsp" %>
-
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
