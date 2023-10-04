@@ -21,7 +21,7 @@ import com.fun.member.model.service.MemberService;
 import com.fun.member.model.vo.Member;
 
 /**
- * Servlet implementation class myPageQaListController
+ * Servlet implementation class MyPageQaListController
  */
 @WebServlet("/qa.me")
 public class MyPageQaListController extends HttpServlet {
@@ -30,7 +30,7 @@ public class MyPageQaListController extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public myPageQaListController() {
+    public MyPageQaListController() {
         super();
         // TODO Auto-generated constructor stub
     }
